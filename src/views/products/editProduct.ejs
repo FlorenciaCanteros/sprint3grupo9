@@ -3,19 +3,31 @@
     <%- include('../partials/head') %>
 <body>
     <%- include('../partials/header') %> 
-    <main>
-        <form action="/" method="POST">
-        <label for="name">Nombre del Producto</label>
-        <input type="text" name="name" id="name" placeholder="Ryzen 5 3600g" required>
-        <label for="price">Precio</label>
-        <input type="number" name="price" id="price" required>
-        <label for="category">Categoria</label>
-        <input type="text" name="category" id="category" required>
-        <input type="file" name="file" id="file" required>  
-        <label for="cuotas">Precio 12 cuotas</label>
-        <input type="number" name="cuotas" id="cuotas" required>
-        </form>
-        <button>Editar</button>
+
+    <main class="main-editProduct">
+        <div class="edit-product-padre">
+            <form action="/" method="POST">
+                <div class="lugar-edit">
+                    <label for="name">Nombre del Producto</label>
+                    <input type="text" name="name" id="name" placeholder="Ryzen 5 3600g" required>
+
+                    <label for="price">Precio</label>
+                    <input type="number" name="price" id="price" required>
+
+                    <label for="category">Categoria</label>
+                    <input type="text" name="category" id="category" required>
+                    <input type="file" name="file" id="file" required>
+
+                    <label for="cuotas">Precio 12 cuotas</label>
+                    <input type="number" name="cuotas" id="cuotas" required>
+
+                    <button class="buton-the-edit">Editar</button>
+
+                </div>
+            </form>
+
+
+        </div>
     </main>
 
     <%- include('../partials/footer') %> 
