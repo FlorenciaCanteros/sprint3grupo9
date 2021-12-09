@@ -8,7 +8,7 @@ router.get('/', productController.index);
 router.get('/editarProducto', productController.edit);
 router.get('/agregarProducto', productController.add);
 router.get('/productDetail', productController.detail);
-router.get('/carrito',productController.cart);
+router.get('/productCart',productController.cart);
 router.get('/resumen',productController.resumen);
 
 module.exports= router;
